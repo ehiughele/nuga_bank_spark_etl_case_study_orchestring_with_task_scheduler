@@ -11,34 +11,35 @@ os.environ['JAVA_HOME'] = 'C:\java8'
 # Initialise my Spark Session
 spark = SparkSession.builder \
         .appName("Nuga Bank ETL") \
+        .config("spark.ui.port", "4050")  \
         .config("spark.jars", "postgresql-42.7.3.jar") \
         .getOrCreate()
 
-# Extract this historical data into a spark dataframe
 
+# Extract this historical data into a spark dataframe
 df = spark.read.csv(r'dataset\rawdata\nuga_bank_transactions.csv', header=True, inferSchema=True)
 
 # fill up the missing values
-df_clean = df.fillna({
-    'Customer_Name': 'Unknown',
-    'Customer_Address': 'Unknown',
-    'Customer_City' : 'Unknown',
-    'Customer_State' : 'Unknown',
-    'Customer_Country' : 'Unknown',
-    'Company' : 'Unknown',
-    'Job_Title' : 'Unknown',
-    'Email' : 'Unknown',
-    'Phone_Number' : 'Unknown',
-    'Credit_Card_Number' : 0,
-    'IBAN' : 'Unknown',
-    'Currency_Code' : 'Unknown',
-    'Random_Number' : 0.0,
-    'Category' : 'Unknown',
-    'Group' : 'Unknown',
-    'Is_Active' : 'Unknown',
-    'Description' : 'Unknown',
-    'Gender' : 'Unknown',
-    'Marital_Status' : 'Unknown'
+df_clean = df.fillna({ \
+    'Customer_Name': 'Unknown', \
+    'Customer_Address': 'Unknown', \
+    'Customer_City' : 'Unknown', \
+    'Customer_State' : 'Unknown', \
+    'Customer_Country' : 'Unknown', \
+    'Company' : 'Unknown', \
+    'Job_Title' : 'Unknown', \
+    'Email' : 'Unknown', \
+    'Phone_Number' : 'Unknown', \
+    'Credit_Card_Number' : 0, \
+    'IBAN' : 'Unknown', \
+    'Currency_Code' : 'Unknown', \
+    'Random_Number' : 0.0, \
+    'Category' : 'Unknown', \
+    'Group' : 'Unknown', \
+    'Is_Active' : 'Unknown', \
+    'Description' : 'Unknown', \
+    'Gender' : 'Unknown', \
+    'Marital_Status' : 'Unknown' \
 })
 
 # drop the missing values in the Last_Updated column
@@ -71,7 +72,7 @@ fact_table = df_clean.join(transaction, ['Transaction_Date', 'Amount', 'Transact
                          'Customer_State', 'Customer_Country'], 'inner') \
                      .join(employee, ['Company', 'Job_Title', 'Email', 'Phone_Number', \
                          'Gender', 'Marital_Status'], 'inner') \
-                     .select('transaction_id', 'customer_id', 'employee_id', 'Credit_Card_Number',
+                     .select('transaction_id', 'customer_id', 'employee_id', 'Credit_Card_Number', \
                          'IBAN', 'Currency_Code', 'Random_Number','Category', 'Group', \
                          'Is_Active', 'Last_Updated', 'Description')
 
@@ -148,10 +149,10 @@ def create_table():
 create_table()   
 
 url = "jdbc:postgresql://localhost:5432/nuga_bank"
-properties = {
-    "user" : "postgres",
-    "password" : "password",
-    "driver" : "org.postgresql.Driver"
+properties = { \
+    "user" : "postgres", \
+    "password" : "password", \
+    "driver" : "org.postgresql.Driver" \
 }
 
 customer.write.jdbc(url=url, table="customer", mode="append", properties=properties)
