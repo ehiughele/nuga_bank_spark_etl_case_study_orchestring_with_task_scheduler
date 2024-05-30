@@ -1,0 +1,48 @@
+<mxfile host="Electron" modified="2024-05-30T16:58:15.493Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="D1o3akvdIScGPU2hO6JS" version="21.6.5" type="device">
+  <diagram name="Page-1" id="ZoZGCpxRVibbaFsOOZfH">
+    <mxGraphModel dx="1257" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="Ucc2MxBHDNon1ogLkp7K-2" target="Ucc2MxBHDNon1ogLkp7K-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-2" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Helvetica;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-3" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.file;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="71.5" y="200" width="47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-4" value="Data source" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="47.5" y="170" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-5" value="csv file" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="55" y="250" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.722;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="Ucc2MxBHDNon1ogLkp7K-6" target="Ucc2MxBHDNon1ogLkp7K-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-6" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Helvetica;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-7" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="67.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-8" value="Postgres Database" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="588.13" y="250" width="131.25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-9" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Helvetica;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="325" y="160" width="110" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-10" value="&lt;font face=&quot;Helvetica&quot;&gt;&lt;b&gt;Scheduled&lt;br&gt;Tasks&lt;/b&gt;&lt;/font&gt;" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.scheduled_tasks;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="Ucc2MxBHDNon1ogLkp7K-9">
+          <mxGeometry y="0.5" width="32" height="32" relative="1" as="geometry">
+            <mxPoint x="5" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ucc2MxBHDNon1ogLkp7K-11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/1*nPcdyVwgcuEZiEZiRqApug.jpeg;clipPath=inset(10.95% 10.33% 27.51% 9%);" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="180" height="77.36" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
